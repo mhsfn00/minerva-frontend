@@ -1,0 +1,12 @@
+@import '../../app.component.scss';
+
+header {
+    background-color: $main-gray;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 4vw;
+    width: 100%;
+    height: 5vh;
+    padding: 10px;
+}
