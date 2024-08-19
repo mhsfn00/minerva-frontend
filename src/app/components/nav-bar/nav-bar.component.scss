@@ -5,6 +5,19 @@ nav {
     color: $main-white;
     position: fixed;
     height: 100%;
-    width: 2vw;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.half {
+    display: flex;
+    flex-direction: column;
+    .top {
+
+    }
+    .bottom {
+
+    }
 }
