@@ -1,17 +1,17 @@
 @import '../../app.component.scss';
 
 nav {
-    background-color: $main-orange;
+    background-color: $main-lead;
     color: $main-white;
     position: fixed;
-    height: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.half {
+.third {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 7vw;
 }

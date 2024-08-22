@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   template:`<a href="{{routePath}}">
-                <img src="{{iconSource}}" alt="{{altText}}">
+                <img src="{{iconSource}}" alt="{{altText}}" class="{{imgClass}}">
             </a>`,
   styleUrl: './nav-button.component.scss'
 })
@@ -14,4 +14,5 @@ export class NavButtonComponent {
     @Input() routePath = '';
     @Input() iconSource = '';
     @Input() altText = '';
+    @Input() imgClass = '';
 }
