@@ -13,5 +13,17 @@ nav {
 .third {
     display: flex;
     flex-direction: row;
+}
+
+.left {
+    gap: 1vw;
+}
+.middle {
     gap: 7vw;
+}
+
+app-nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
