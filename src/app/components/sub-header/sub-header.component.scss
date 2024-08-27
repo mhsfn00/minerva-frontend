@@ -1,7 +1,20 @@
 .sub-header {
     background-color: green;
     width: 100%;
-    position: fixed;
-    top: 500px;
-    z-index: 5;
+    position-anchor: --header;
+    position: absolute;
+    top: anchor(bottom);
+    left: anchor(left);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subheader-third {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }

@@ -4,13 +4,14 @@ nav {
     background-color: $main-lead;
     color: $main-white;
     position: fixed;
+    anchor-name: --header;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.third {
+.navbar-third {
     display: flex;
     flex-direction: row;
 }
