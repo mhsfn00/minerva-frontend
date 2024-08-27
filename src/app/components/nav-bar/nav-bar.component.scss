@@ -1,0 +1,29 @@
+@import '../../app.component.scss';
+
+nav {
+    background-color: $main-lead;
+    color: $main-white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    gap: 1vw;
+}
+.middle {
+    gap: 7vw;
+}
+
+app-nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
