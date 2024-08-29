@@ -1,28 +1,42 @@
 import { Component, Input } from '@angular/core';
+import { FunctionButtonComponent } from '../function-button/function-button.component';
+import { SearchBarComponent } from '../search-bar/search-bar.component';
 
 @Component({
   selector: 'app-sub-header',
   standalone: true,
-  imports: [],
+  imports: [FunctionButtonComponent, SearchBarComponent],
   template: `
             <div class="sub-header">
                 <div class="subheader-third left">
                     @if (firstButton != '') {
-                        <button >{{ firstButton }}</button>
+                        <app-function-button
+                            text="{{ firstButton }}"
+                            type="left"
+                        />
                     }
                     @if (secondButton != '') {
-                        <button>{{ secondButton }}</button>
+                        <app-function-button
+                            text="{{ secondButton }}"
+                            type="middle"
+                        />
                     }
                     @if (thirdButton != '') {
-                        <button>{{ thirdButton }}</button>
+                        <app-function-button
+                            text="{{ thirdButton }} "
+                            type="right"
+                            borderColor="orange"
+                        />
                     }
                 </div>
                 <div class="subheader-third middle">
-                    <!-- <app-function-button /> -->
-                    <!-- <app-search-bar /> -->
+                    <app-search-bar />
                 </div>
                 <div class="subheader-third right">
-                    <!-- <app-function-button /> -->
+                    <app-function-button 
+                        text="{{ rightSideButton }}"
+                        type="single"
+                    />
                 </div>
             </div>
             `,

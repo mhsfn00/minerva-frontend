@@ -1,14 +1,28 @@
+@import '../../app.component.scss';
+
 .sub-header {
-    background-color: green;
     width: 100%;
     position-anchor: --header;
     position: absolute;
     top: anchor(bottom);
+    padding-top: 20px;
     left: anchor(left);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.orange {
+    background-color: $main-orange;
+}
+
+.lead {
+    background-color: $main-lead;
+}
+
+.gray {
+    background-color: $main-gray;
 }
 
 .subheader-third {
