@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   template: `
     <div class="button {{ type }} border-{{ borderColor }} {{ color }}">
       @if (iconSource != '') {
-        <img src="{{ iconSource }}"/>
+        <img class="icon" src="{{ iconSource }}"/>
       }
       <span>{{ text }}</span>
     </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-search-bar',
@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <div class=search-bar-container>
-      <img src="/app/assets/searchIcon.png" />
-      <input type="text" />
+      <img class="search-icon" src="/app/assets/searchIcon.png" />
+      <input class="search-bar" type="text" placeholder="{{ placeHolder }}"/>
     </div>
   `,
   styleUrl: './search-bar.component.scss'
 })
 export class SearchBarComponent {
-
+    @Input() placeHolder : string = 'Busque';
 }

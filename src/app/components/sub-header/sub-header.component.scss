@@ -33,10 +33,23 @@
     padding: 10px;
 }
 
-.left, .right {
-    width: 33%;
+.right {
+    width: 25%;
+    justify-content: right;
+    padding-right: 25px;
+}
+
+.left {
+    width: 25%;
+    justify-content: left;
+    padding-left: 25px;
 }
 
 .middle {
-    width: 34%;
+    width: 50%;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 60%;
 }

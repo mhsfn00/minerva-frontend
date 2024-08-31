@@ -30,12 +30,16 @@ import { SearchBarComponent } from '../search-bar/search-bar.component';
                     }
                 </div>
                 <div class="subheader-third middle">
-                    <app-search-bar />
+                    <app-search-bar
+                        class="search-bar"
+                        placeHolder="{{ searchPlaceholder }}" 
+                    />
                 </div>
                 <div class="subheader-third right">
                     <app-function-button 
                         text="{{ rightSideButton }}"
                         type="single"
+                        iconSource="{{ rightSideButtonIcon }}"
                     />
                 </div>
             </div>
@@ -43,9 +47,10 @@ import { SearchBarComponent } from '../search-bar/search-bar.component';
   styleUrl: './sub-header.component.scss'
 })
 export class SubHeaderComponent {
-    @Input() firstButton = '';
-    @Input() secondButton = '';
-    @Input() thirdButton = ''; 
-    @Input() rightSideButton = '';
-    @Input() rightSideButtonIcon = '';
+    @Input() firstButton : string = '';
+    @Input() secondButton : string = '';
+    @Input() thirdButton : string = ''; 
+    @Input() rightSideButton : string = '';
+    @Input() rightSideButtonIcon : string = '';
+    @Input() searchPlaceholder : string = 'Busque';
 }
