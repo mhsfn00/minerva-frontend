@@ -1,0 +1,24 @@
+@import '../../app.component.scss';
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    background-color: $main-gray;
+    border-radius: 5px;
+    gap: 5px;
+    width: 100%;
+}
+
+.search-bar {
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    width: 100%;
+}
+
+.search-icon {
+    width: 25px;
+    height: 25px;
+}

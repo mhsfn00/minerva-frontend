@@ -1,0 +1,75 @@
+@import '../../app.component.scss';
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    font-weight: 400;
+    gap: 5px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.border-orange {
+    border: 3px solid $main-orange;
+}
+
+.border-gray {
+    border-color: $main-gray;
+}
+
+.border-lead {
+    border-color: $main-lead;
+}
+
+.single {
+    border-radius: 8px;
+    border: 0;
+}
+
+.right {
+    border-radius: 0 8px 8px 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.left {
+    border-radius: 8px 0 0 8px;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+.middle-row {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.middle-column {
+    border-left: 0;
+    border-right: 0;
+}
+
+.gray {
+    background-color: $main-gray;
+    color: $main-lead;
+}
+
+.orange {
+    background-color: $main-orange;
+    color: $main-lead;
+}
+
+.lead {
+    background-color: $main-lead;
+    color: $main-white;
+}
