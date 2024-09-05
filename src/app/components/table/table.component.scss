@@ -1,0 +1,17 @@
+@import '../../app.component.scss';
+
+th, td {
+    text-align: center;
+    background-color: green;
+}
+
+.table-container {
+    background-color: blue;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    width: 85vw;
+}
