@@ -1,5 +1,6 @@
-<div class="table-container">
-    <table class="table" ng-if="tableType == 'people'">
+
+<table class="table" ng-if="tableType == 'people'">
+    <thead>
         <tr>
             <th>Nome</th>
             <th>Telefone</th>
@@ -7,6 +8,8 @@
             <th>Cidade</th>
             <th>Chamado em aberto</th>
         </tr>
+    </thead>
+    <tbody class="table-body">
         <tr>
             <td>José Carlos da Silva</td>
             <td>(44) 99887-38288</td>
@@ -42,5 +45,5 @@
             <td>Maringá-PR</td>
             <td>Sim</td>
         </tr>
-    </table>
-</div>
+    </tbody>
+</table>
