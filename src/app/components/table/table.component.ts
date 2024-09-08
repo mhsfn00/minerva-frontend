@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { getCalls, getClients } from '../../services/mockDb.js';
+import { getCalls, getClients, getBuildings } from '../../services/mockDb.js';
 
 @Component({
   selector: 'app-table',
@@ -45,7 +45,7 @@ import { getCalls, getClients } from '../../services/mockDb.js';
                                 <td>{{ call.number }}</td>
                                 <td>{{ call.reason }}</td>
                                 <td>{{ call.dateCreated }}</td>
-                                <td>{{ call.clientName }}</td>
+                                <td>{{ call.client }}</td>
                                 <td>{{ call.urgency }}</td>
                                 <td>{{ call.status }}</td>
                             </tr>
@@ -57,11 +57,22 @@ import { getCalls, getClients } from '../../services/mockDb.js';
                         <tr>
                             <th>Nome</th>
                             <th>Endereço</th>
-                            <th>Cliente</th>
+                            <th>Responsável</th>
                             <th>Cidade</th>
                             <th>Chamado em aberto</th>
                         </tr>
                     </thead>
+                    <tbody class="table-body">
+                        @for(building of buildings; track building.name) {
+                            <tr>
+                                <td>{{ building.name }}</td>
+                                <td>{{ building.address }}</td>
+                                <td>{{ building.owner }}</td>
+                                <td>{{ building.city }}</td>
+                                <td>{{ building.openCall }}</td>
+                            </tr>
+                        }
+                    </tbody>
                 }
             </table>`,
   styleUrl: './table.component.scss'
@@ -70,4 +81,5 @@ export class TableComponent {
   @Input() tableType : 'people' | 'calls' | 'buildings' | String = '';
   calls = getCalls();
   clients = getClients();
+  buildings = getBuildings();
 }
