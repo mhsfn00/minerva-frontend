@@ -50,3 +50,7 @@ export function getClients() {
 export function getBuildings() {
     return buildings;
 }
+
+export function isUserAuth() {
+    return false;
+}
