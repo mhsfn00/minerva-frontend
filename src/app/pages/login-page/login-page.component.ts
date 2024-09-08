@@ -29,7 +29,7 @@ import { FunctionButtonComponent } from "../../components/function-button/functi
                     <a href="/">Esqueceu sua senha?</a>
                 </div>
                 <div class="activity">
-                    <a href="/home">
+                    <a class="login-button-container" href="/home">
                         <div class="login-button">
                             Entrar
                         </div>
