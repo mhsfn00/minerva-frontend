@@ -1,0 +1,106 @@
+@import '../../app.component.scss';
+
+.left-side {
+    background-color: $main-orange;
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side {
+    background-color: $main-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+}
+
+.minerva {
+    height: 100%;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 15vw;
+}
+
+.form {
+    width: 100%;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+    color: $main-lead;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+input {
+    background-color: $main-gray;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    width: 100%;
+    height: 30px;   
+}
+
+a {
+    color: $main-orange;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.recovery {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.activity {
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    font-weight: 400;
+    gap: 5px;
+    background-color: $main-orange;
+    border-radius: 8px;
+    color: $main-white;
+    font-weight: 700;
+    font-size: 17px;
+    width: 100%;
+    z-index: 10;
+}
+
+a {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-button:hover {
+    cursor: pointer;
+}

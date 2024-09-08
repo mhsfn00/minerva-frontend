@@ -5,9 +5,11 @@ import { ClientsPageComponent } from './pages/clients-page/clients-page.componen
 import { RegistrationsPageComponent } from './pages/registrations-page/registrations-page.component';
 import { SchedulePageComponent } from './pages/schedule-page/schedule-page.component';
 import { SettingsPageComponent } from './pages/settings-page/settings-page.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 export const routes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '', redirectTo: '/login', pathMatch: 'full' },
+    { path: 'login', component: LoginPageComponent },
     { path: 'home', component: HomePageComponent },
     { path: 'calls', component: CallsPageComponent },
     { path: 'clients', component: ClientsPageComponent },
