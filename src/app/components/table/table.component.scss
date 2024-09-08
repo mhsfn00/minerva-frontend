@@ -1,0 +1,37 @@
+@import '../../app.component.scss';
+
+th, td {
+    text-align: center;
+    height: 35px;
+    max-height: 35px;
+    border-collapse: collapse;
+}
+
+tr {
+    border: 3px solid $main-gray;
+}
+
+th {
+    background-color: $main-gray;
+}
+
+tr:nth-child(even) {
+    background-color: rgba($main-orange, 0.2);
+}
+
+.table {
+    width: 85vw;
+    table-layout: fixed;
+    position-anchor: --sub-header;
+    position: absolute;
+    top: anchor(bottom);
+    margin-top: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px $main-gray;
+}

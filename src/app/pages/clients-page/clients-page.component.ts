@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { SubHeaderComponent } from '../../components/sub-header/sub-header.component';
+import { TableComponent } from '../../components/table/table.component';
 
 @Component({
   selector: 'app-clients-page',
   standalone: true,
-  imports: [],
+  imports: [SubHeaderComponent, TableComponent],
   templateUrl: './clients-page.component.html',
   styleUrl: './clients-page.component.scss'
 })

@@ -3,6 +3,7 @@
 .sub-header {
     width: 100%;
     position-anchor: --header;
+    anchor-name: --sub-header;
     position: absolute;
     top: anchor(bottom);
     padding-top: 20px;
